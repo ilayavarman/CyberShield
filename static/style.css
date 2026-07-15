@@ -1,0 +1,59 @@
+/* ===========================
+   CyberShield Theme
+=========================== */
+
+.stApp{
+    background: linear-gradient(135deg,#0E1117,#1B2330);
+}
+
+/* Sidebar */
+
+section[data-testid="stSidebar"]{
+    background:#111827;
+}
+
+section[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* Title */
+
+h1{
+    color:#00ff88;
+    text-align:center;
+}
+
+h2,h3{
+    color:#00BFFF;
+}
+
+/* Buttons */
+
+.stButton>button{
+    background:linear-gradient(90deg,#00ff88,#00BFFF);
+    color:black;
+    border:none;
+    border-radius:10px;
+    height:45px;
+    font-weight:bold;
+}
+
+.stButton>button:hover{
+    color:white;
+}
+
+/* Input */
+
+.stTextInput input{
+    border:2px solid #00ff88;
+    border-radius:10px;
+}
+
+/* Metric Cards */
+
+[data-testid="stMetric"]{
+    background:#1F2937;
+    border:1px solid #00ff88;
+    border-radius:12px;
+    padding:15px;
+}
