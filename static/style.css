@@ -1,59 +1,74 @@
-/* ===========================
-   CyberShield Theme
-=========================== */
-
-.stApp{
-    background: linear-gradient(135deg,#0E1117,#1B2330);
+/* Background */
+.stApp {
+    background: #050505;
+    color: #00ff41;
 }
 
-/* Sidebar */
-
-section[data-testid="stSidebar"]{
-    background:#111827;
+/* Main content */
+.main .block-container {
+    background: #0d0d0d;
+    border: 2px solid #00ff41;
+    border-radius: 12px;
+    padding: 2rem;
 }
 
-section[data-testid="stSidebar"] *{
-    color:white;
+/* Headings */
+h1, h2, h3 {
+    color: #00ff41 !important;
+    text-shadow: 0 0 10px #00ff41;
 }
 
-/* Title */
-
-h1{
-    color:#00ff88;
-    text-align:center;
-}
-
-h2,h3{
-    color:#00BFFF;
+/* Paragraphs */
+p, label, div {
+    color: #b8ffb8;
 }
 
 /* Buttons */
-
-.stButton>button{
-    background:linear-gradient(90deg,#00ff88,#00BFFF);
-    color:black;
-    border:none;
-    border-radius:10px;
-    height:45px;
-    font-weight:bold;
+.stButton > button {
+    background: black;
+    color: #00ff41;
+    border: 2px solid #00ff41;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-.stButton>button:hover{
-    color:white;
+.stButton > button:hover {
+    background: #00ff41;
+    color: black;
 }
 
-/* Input */
-
-.stTextInput input{
-    border:2px solid #00ff88;
-    border-radius:10px;
+/* Text Input */
+.stTextInput input {
+    background: black;
+    color: #00ff41;
+    border: 2px solid #00ff41;
 }
 
-/* Metric Cards */
+/* Metrics */
+[data-testid="stMetric"] {
+    background: #101010;
+    border: 1px solid #00ff41;
+    border-radius: 10px;
+    padding: 15px;
+}
 
-[data-testid="stMetric"]{
-    background:#1F2937;
-    border:1px solid #00ff88;
-    border-radius:12px;
-    padding:15px;
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #080808;
+    border-right: 2px solid #00ff41;
+}
+
+/* Success */
+.stSuccess {
+    border: 1px solid #00ff41;
+}
+
+/* Warning */
+.stWarning {
+    border: 1px solid #ffcc00;
+}
+
+/* Error */
+.stError {
+    border: 1px solid #ff3333;
 }
